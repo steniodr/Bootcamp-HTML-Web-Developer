@@ -1,5 +1,11 @@
 <h1><em> HTML REPO </em></h1>
 
+<p> Esse repositório irá conter os códigos aprendidos e desenvolvidos na plataforma <strong><em>Digital Innovation One</em></strong>**. </p>
+
+**Se deseja ver o código abaixo em ação, por favor visite o readme.html :grinning:**
+
+
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -7,7 +13,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/github.png">
     <title>HTML REPO</title>
 </head>
