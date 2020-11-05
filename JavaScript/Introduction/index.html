@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javaScript" src="js/main.js"></script>
+    <title>Primeira Aula usando JavaScript</title>
+</head>
+    
+    <body style="background: #5c5c5c; font-family: Verdana; padding: 40px" onload="pageLoad()">
+    <article style="width: 90%;">
+        <header>
+            <h1 style="text-align: center;">Introdução ao JavaScript</h1>
+        </header>
+        <div style=" display: flex; flex-direction: column; background: #ffffff; width: 100%; padding: 1.3rem; border:
+                3px solid lightgray;">
+                <h2 style="color: #505050; font-style: italic;">#1 Aula</h2>
+                <h3 style="font-style: italic; font-size: 22px;">Resumo</h3>
+                <p>Utilizando a tag &lt;script&gt; e um arquivo main.js a parte para executar em JavaScript.
+                    Aprendendo como utilizar o console da pagina para acompanhar e debuggar os códigos js.
+                </p>
+                </br>
+                <h2 style="color: #505050; font-style: italic; margin: 0;">#2 Aula</h2>
+                <h3 style="font-style: italic; font-size: 22px;">Resumo</h3>
+                <p>Adicionando casos de array e dictionary no console log. Pressionar F12 para conferir.</p>
+                </br>
+                <h2 style="color: #505050; font-style: italic; margin: 0;">#3 Aula</h2>
+                <h3 style="font-style: italic; font-size: 22px;">Resumo</h3>
+                <p>Adicionando e entendendo trabalhar com condições, repetições e Date</p>
+                </div>
+
+    </article>
+    <article style="width: 90%;">
+        <header>
+            <h1 style="text-align: center;"">Desenvolva páginas web com JavaScript</h1>
+        </header>
+        <div style=" display: flex; flex-direction: column; background: #ffffff; width: 100%; padding: 1.3rem; border:
+                3px solid lightgray;">
+                <h2 style="color: #505050; font-style: italic;">#1 Aula</h2>
+                <h3 style="font-style: italic; font-size: 22px;">Resumo</h3>
+                <p>Aprendendo a utilizar functions dentro do javaScript</p>
+            </br>
+                <h2 style="color: #505050; font-style: italic;">#2 Aula</h2>
+                <h3 style="font-style: italic; font-size: 22px;">Resumo</h3>
+                <p>Aprendendo a manipular os elementos na pagina.</p>
+                <button type="button" onclick="clicked()" style="padding: 8px;  border-radius: 4px; width: 10rem;" id="button_test">Clique aqui</button>
+                <button type="button" onclick="goToDIO()" style="padding: 8px;  border-radius: 4px; width: 10rem; visibility: hidden;" id="button_dio">Ir para Digital Innovation One</button>
+                <div>
+                    <p onmouseover="changeText(this)" onmouseout="backText(this)" id="mouseover_test" style="width: 20rem;">Não passe o mouse aqui!!!</p>
+                </div>
+                <p>Você gosta de aprender coisas novas?</p>
+                <select onchange="changed(this)">
+                    <option value="1">Sim</option>
+                    <option value="2">Claro</option>
+                    <option value="3">Com certeza</option>
+                    <option value="4">Sem duvidas</option>
+                </select>
+
+            </div>
+            
+    </article>
+    <script>
+        console.log('Teste JavaScript dentro do HTML com a tag <script>');
+    </script>
+</body>
+
+</html>
