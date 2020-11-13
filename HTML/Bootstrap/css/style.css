@@ -1,0 +1,61 @@
+/* GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SEÇÕES */
+.quem-sou {
+    background: #c5c5c5;
+}
+
+.cursos {
+    background: #a3a3a3;
+}
+
+.projetos {
+    background: #9c9c9c;
+}
+
+.margin {
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+/* TITULOS E SUBTITULOS */
+
+.title-apresentation{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sub-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.myimg {
+    padding: 15px;
+}
+
+.logo {
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 20px;
+}
+
+.gif {
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.footer-text {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
