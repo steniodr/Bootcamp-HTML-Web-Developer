@@ -1,0 +1,250 @@
+/* Declarando variaveis no CSS */
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+/* Elementos Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preta);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row; /* Padrão*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaaaaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #ffffff;
+}
+
+/* Header */
+.dropbotao{
+    padding: 15px;
+    background-color: var(--preta);
+    border: none;
+    font-size: 25px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    position: relative;
+}
+
+.dropdown-content{
+    right: 0;
+    text-align: right;
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .50);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    color: #aaaaaa;
+}
+
+.dropdown-content a:hover {
+    color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover .dropbotao {
+    background-color: #000000;
+}
+
+/* Filme Principal */
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, -50), rgba(0, 0, 0, -50)100%), url('/HTML/Netflix/img/lucifer.jpg');
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: #ffffff;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 5%;
+    margin-right: 10px;
+}
+
+.filme-principal .container {
+    width: 80%;
+}
+
+/* Bloco de imagens */
+.sub-titulo {
+    margin-left: 5%;
+    font-size: 18px;
+    padding: 3px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-fime {
+    margin-top: 10px;
+}
+
+
+/* Tela de Filmes */
+
+.filme-matrix {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, -50), rgba(0, 0, 0, -50)100%), url('/HTML/Netflix/img/matrix.jpg');
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-matrix .descricao {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.filme-matrix .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.filme-matrix .container {
+    width: 90%;
+}
+
+.filme-matrix .botoes {
+    margin-bottom: 5%;
+}
+
+/* Tela de Séries */
+
+.serie-himym {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, -50), rgba(0, 0, 0, -50)100%), url('/HTML/Netflix/img/himym.jpg');
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.serie-himym .descricao {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.serie-himym .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.serie-himym .container {
+    width: 90%;
+}
+
+/* Tela de Documentários */
+
+.documentary {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, -50), rgba(0, 0, 0, -50)100%), url('/HTML/Netflix/img/explicandoSexo.jpg');
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.documentary .descricao {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.documentary .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.documentary .container {
+    width: 90%;
+}
