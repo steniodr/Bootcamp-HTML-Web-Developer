@@ -69,23 +69,33 @@ function startGame() {
         drawFood('#EB2915');
     } else if (points >= 20 && points < 30){
         let mode = document.getElementById('game-mode')
-        mode.innerHTML = "Por do Sol";
+        mode.innerHTML = "Pôr do Sol";
         mode.style.color = "#FF761A";
         document.getElementById('points').style.color = "#FF761A";
 
         createBG('#FF761A');
         createSnake('#D1201C');
-        drawFood('#FFFFFF');
-    } else if (points >= 30){
+        drawFood('#711BF5');
+    } else if (points >= 30 && points < 50){
         let mode = document.getElementById('game-mode')
         mode.innerHTML = "Espaço";
-        mode.style.color = "#575757";
+        mode.style.color = "#000000";
         document.getElementById('points').style.color = "#000000";
-        document.getElementById('snake').style.borderColor = "#ffffff";
+        document.getElementById('snake').style.borderColor = "#FFFFFF";
 
         createBG('#000000');
         createSnake('#575757');
         drawFood('#FFFFFF');
+    } else if (points >= 50){
+        let mode = document.getElementById('game-mode')
+        mode.innerHTML = "Além";
+        mode.style.color = "#1764FF";
+        document.getElementById('points').style.color = "#1764FF";
+        document.getElementById('snake').style.borderColor = "#000000";
+
+        createBG('#1764FF');
+        createSnake('#FFFFFF');
+        drawFood('#E65CC9');
     }
 
     let snakeX = snake[0].x; 
