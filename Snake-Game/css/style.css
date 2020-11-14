@@ -86,6 +86,19 @@ body {
     border: 5px solid #000000;
 }
 
+.setas{
+    font-size: 40px;
+    font-family: "Arial Black";
+    margin-left: 35px;
+}
+
+.instructionsMenu i {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+    align-items: center;
+}
+
 .game {
     display: none;
     flex-direction: column;
